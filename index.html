@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Diagnóstico</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="stylesheet" href="formato.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="container">
+      <div class="inicio row" id="inicio">
+        <div class="row encabezado1">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="col">
+              <h1 style="border-bottom: orange solid 2px;">Maldonado Consultores</h1>
+            </div>
+            <div class="col">
+              <p>Registro</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="https://maldonadoconsultores.com/wp-content/uploads/2023/02/Logo-R-invertida.png" alt="">
+          </div>
+        </div>
+        <form class="formulario" name="formulario" action="">
+          <div class="Registro">
+            <div class="input-group">
+              <span class="input-group-text">Nombre y apellido</span>
+              <input class="form-control" type="text" id="nombres" aria-label="First name" class="form-control" placeholder="Nombre completo"  required>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Teléfono de contacto</span>
+              <input id="telefono" type="text" aria-label="First name" placeholder="#9874" class="form-control" min="8" max="10" required>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Giro</span>
+              <input type="text" id="giro" aria-label="First name" class="form-control" required>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Clasificación</span>
+              <input type="text" id="clasificacion" aria-label="First name" class="form-control" required>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Fecha</span>
+              <input type="datetime-local" id="fecha" aria-label="First name" class="form-control" required>
+            </div>
+          </div>
+        </form>
+        <button type="submit" id="registrar" name="registrar" onclick="next()" class="btn btn-primary" value="Enviar">siguiente</button>
+      </div>
+
+
+      <div id="bloque1">
+        <div class="row">
+          <div class="row">
+            <div class="col-10">
+              <div class="col">
+                <h1 style="border-bottom: orange solid 2px;">Maldonado Consultores</h1>
+              </div>
+              <div class="col">
+                <p>Asesoría Financiera, Administrativa, Planeación estratégica y Sistema de calidad.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="https://maldonadoconsultores.com/wp-content/uploads/2023/02/Logo-R-invertida.png" alt="">
+            </div>
+          </div>
+          <div id="">
+            <h1>Resumen ejecutivo de la empresa</h1>
+    
+            <ol>
+              <li>
+                <div>
+                  <p>¿Tiene definido los objetivos de su empresa?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOption" id="valor" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                 
+                  
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Tiene definida la misión de su empresa?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor2">Si</label>
+                    <input class="form-check-input" type="radio" name="rs" id="valor2" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rs" id="inlineRa" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Tiene definida la visión de su empresa?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="r2" id="valor3" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="r2" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Cuenta con el organigrama de su empresa?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="r3" id="valor4" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="r3" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Tiene asesores externos?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="r4" id="valor5" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="r4" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Cuenta con dos o más propietarios y/o accionistas?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="r5" id="valor6" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="r5" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+            </ol>
+            <button type="submit" id="" name="" onclick="next2()" class="btn btn-primary" value="Enviar">siguiente</button>
+           
+          </div>
+      </div>
+      </div>
+      <div id="bloque2">
+        <div class="row">
+          <div class="row">
+            <div class="col-10">
+              <div class="col">
+                <h1 style="border-bottom: orange solid 2px;">Maldonado Consultores</h1>
+              </div>
+              <div class="col">
+                <p>Asesoría Financiera, Administrativa, Planeación estratégica y Sistema de calidad.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="https://maldonadoconsultores.com/wp-content/uploads/2023/02/Logo-R-invertida.png" alt="">
+            </div>
+          </div>
+          <div id="">
+            <h1>Historia y situación actual</h1>
+    
+            <ol>
+              <li>
+                <div>
+                  <p>¿¿Cuál es su facturación aproximada mensual??</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Más de $999,999.00 MXN</label>
+                    <input class="form-check-input" type="radio" name="op" id="va1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="op" id="va2" value="option2">
+                    <label class="form-check-label" for="">Más de $500,000.00 MXN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="op" id="va3" value="option2">
+                    <label class="form-check-label" for="">Más de $99,000.00 MXN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="op" id="va4" value="option2">
+                    <label class="form-check-label" for="">Menos de $99,000.00 MXN</label>
+                  </div>
+                 
+                  
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Cuenta con información de sus costos mensual, anual o de más de un año?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor2">Si</label>
+                    <input class="form-check-input" type="radio" name="" id="v5" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="" id="v6" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿A qué sector pertenece tu empresa?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Sector Primario</label>
+                    <input class="form-check-input" type="radio" name="SECTOR" id="SR7" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SECTOR" id="SR8" value="optin2">
+                    <label class="form-check-label" for="">Sector Secundario</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SECTOR" id="SR9" value="opt">
+                    <label class="form-check-label" for="">Sector Terceario</label>
+                  </div>
+                </div>
+              </li>
+            </ol>
+                
+            <button type="submit" id="" name="" onclick="next3()" class="btn btn-primary" value="Enviar">siguiente</button>
+          </div>
+      </div>
+      </div>
+      <div id="bloque3">
+        <div class="row">
+          <div class="row">
+            <div class="col-10">
+              <div class="col">
+                <h1 style="border-bottom: orange solid 2px;">Maldonado Consultores</h1>
+              </div>
+              <div class="col">
+                <p>Asesoría Financiera, Administrativa, Planeación estratégica y Sistema de calidad.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="https://maldonadoconsultores.com/wp-content/uploads/2023/02/Logo-R-invertida.png" alt="">
+            </div>
+          </div>
+          <div id="">
+            <h1>Situación estratégica y acceso a tecnología</h1>
+    
+            <ol>
+              <li>
+                <div>
+                  <p>¿Cuenta con alguna de las siguientes herramientas tecnólogicas?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Equipos</label>
+                    <input class="form-check-input" type="radio" name="tecno" id="tec1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tecno" id="tec2" value="option2">
+                    <label class="form-check-label" for="">Hardware</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tecno" id="tec3" value="option2">
+                    <label class="form-check-label" for="">software</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tecno" id="tec4" value="option2">
+                    <label class="form-check-label" for="">No cuento con tecnología</label>
+                  </div>
+                 
+                  
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>Servicios futuros: ¿Desea desarrollar nuevas líneas de negocio?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor2">Si</label>
+                    <input class="form-check-input" type="radio" name="nego" id="neg1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="nego" id="neg2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Cuenta usted con un plan de marketing o estrategia comercial?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="maeke" id="mark1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="maeke" id="mark2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Realiza capacitaciones mensuales al personal de su empresa?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="capaci" id="capa1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="capaci" id="capa2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Conoce su competencia?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="compet" id="comp1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="compet" id="comp2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+            </ol>
+                
+            <button type="submit" id="" name="" onclick="next4()" class="btn btn-primary" value="Enviar">siguiente</button>
+          </div>
+      </div>
+      </div>
+      <div id="bloque4">
+        <div class="row">
+          <div class="row">
+            <div class="col-10">
+              <div class="col">
+                <h1 style="border-bottom: orange solid 2px;">Maldonado Consultores</h1>
+              </div>
+              <div class="col">
+                <p>Asesoría Financiera, Administrativa, Planeación estratégica y Sistema de calidad.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="https://maldonadoconsultores.com/wp-content/uploads/2023/02/Logo-R-invertida.png" alt="">
+            </div>
+          </div>
+          <div id="">
+            <h1>Identificación de procesos</h1>
+    
+            <ol>
+              <li>
+                <div>
+                  <p>¿Cuenta con sus área definida (organigrama)?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="orga" id="org1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="orga" id="org2" value="option2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                 
+                  
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Cuenta con la descripción de puestos de su empresa?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor2">Si</label>
+                    <input class="form-check-input" type="radio" name="puesto" id="pues1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="puesto" id="pues2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>¿Cuenta con sus procedimientos documentados?</p>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="valor">Si</label>
+                    <input class="form-check-input" type="radio" name="proced" id="proc1" value="si">
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="proced" id="proc2" value="opton2">
+                    <label class="form-check-label" for="">No</label>
+                  </div>
+                </div>
+              </li>
+            </ol>
+                
+            <button type="submit" id="registrar" name="registrar" onclick="login()" class="btn btn-primary" value="Enviar">Enviar</button>
+          </div>
+      </div>
+      </div>
+      
+      <div class="documento" id="documento">
+      <div class="row">
+        <div class="col-10">
+          <div class="col">
+            <h1 style="border-bottom: orange solid 2px;">Maldonado Consultores</h1>
+          </div>
+          <div class="col">
+            <p>Asesoría Financiera, Administrativa, Planeación estratégica y Sistema de calidad.</p>
+          </div>
+        </div>
+        <div class="col-2">
+          <img src="https://maldonadoconsultores.com/wp-content/uploads/2023/02/Logo-R-invertida.png" alt="">
+        </div>
+      </div>
+        <div class="">
+            <table class="table formato" id="formato">
+                <div class="encabezado2"><p>Datos Empresariales</p></div>
+                <tbody>
+                  <tr style="border-bottom: rgba(139, 139, 139, 0.338) solid 3px;">
+                    <td>Nombre del Empresario</td>
+                    <td id="nombre" colspan="2">Otto</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Teléfono de contacto</td>
+                    <td id="telef">Thornton</td>
+                  </tr>
+                  <tr>
+                    <td>Giro</td>
+                    <td id="gir">Thornton</td>
+                  </tr>
+                  <tr>
+                    <td>Calificación</td>
+                    <td id="clasif">Thornton</td>
+                  </tr>
+                  <tr>
+                    <td>Fecha</td>
+                    <td id="date">Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div id="tabla1">
+          <table class="table fot formato">
+              <div class="encabezado2"><p>Resultado Diagnóstico</p></div>
+              <thead>
+                <tr>
+                  <th colspan="2" scope="col">Resumen ejecutivo de la Empresariales</th>
+                  <th>Respuesta</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2">¿Tiene definido los objetivos de su empresa</td>
+                  <td id="si1">1</td>
+                  <td id="val1">1</td>
+                </tr>
+                <tr>
+                  <td colspan="2">¿Tiene definida la misión de su empresa?</td>
+                  <td id="si2">1</td>
+                  <td id="val2">1</td>
+                </tr>
+                <tr>
+                  <td colspan="2">¿Tiene definida la visión de su empresa?</td>
+                  <td id="si3">1</td>
+                  <td id="val3">1</td>
+                </tr>
+                <tr>
+                  <td colspan="2">¿Cuenta con el organigrama de su empresa?</td>
+                  <td id="si4">Thornton</td>
+                  <td id="val4">Thornton</td>
+                </tr>
+                <tr>
+                  <td colspan="2">¿Tiene asesores es ternos?</td>
+                  <td id="si5">Thornton</td>
+                  <td id="val5">Thornton</td>
+                </tr>
+                <tr>
+                  <td colspan="2">¿Cuenta con dos o más propietarios y/o accionistas?</td>
+                  <td id="si6">Thornton</td>
+                  <td id="val6">Thornton</td>
+                </tr>
+                <tr>
+                  <td colspan="3">Total</td>
+                  <td id="val7">Thornton</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <div class="tabla2">
+        <table class="table formato">
+          <thead>
+            <tr>
+              <th colspan="2" scope="col">Historia y Situación actual</th>
+              <th>Respuesta</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">¿Cuál es su facturación aproximada mensual?</td>
+                <td id="s1">Thornton</td>
+                <td id="v1">1</td>
+              </tr>
+              <tr>
+                <td colspan="2">¿Cuenta con la información de sus costos mensual,<br> anual o de más de un año</td>
+                <td id="s2">Thornton</td>
+                <td id="v2">Otto</td>
+              </tr>
+              <tr>
+                <td colspan="2">Descripción de sus servicios</td>
+                <td id="s3">1</td>
+                <td id="v3">1</td>
+              </tr>
+              <tr>
+                <td colspan="3">Total</td>
+                <td id="vas1">1</td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+    <div class="tabla3">
+      <table class="table formato">
+        <thead>
+          <tr>
+            <th colspan="2" scope="col">Situación Estratégica y Acceso a Tecnología</th>
+            <th>Respuesta</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">¿Cuenta con herramientas tecnológicas como <br> computadoras, paqueterías de ofimática?</td>
+              <td id="te1">1</td>
+              <td id="vt1">1</td>
+            </tr>
+            <tr>
+              <td colspan="2">Servicios futuros: ¿Desea desarrollar nuevas líneas<br> de negocio?</td>
+              <td id="te2">Thornton</td>
+              <td id="vt2">1</td>
+            </tr>
+            <tr>
+              <td colspan="2">¿Cuenta usted con plan de marketing o estrategia <br> comercial?</td>
+              <td id="te3">Thornton</td>
+              <td id="vt3">1</td>
+            </tr>
+            <tr>
+              <td colspan="2">¿Realiza capacitaciones mensuales al personal de su<br> empresa?</td>
+              <td id="te4">Thornton</td>
+              <td id="vt4">1</td>
+            </tr>
+            <tr>
+              <td colspan="2">¿Conoce su competencia?</td>
+              <td id="te5">Thornton</td>
+              <td id="vt5">1</td>
+            </tr>
+            <tr>
+              <td colspan="3">Total</td>
+              <td id="vas2">1</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  <div class="tabla4">
+    <table class="table formato">
+        <thead>
+          <tr>
+            <th colspan="2" scope="col">Identificación de Procesos</th>
+            <th>Respuesta</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2">¿Cuenta con la descripción de puestos de su empresa?</td>
+            <td id="or1">lkhkjh</td>
+            <td id="vor1">1</td>
+            
+          </tr>
+          <tr>
+            <td colspan="2">¿Cuenta con su área definidas(organigrama)?</td>
+            <td id="def1">kjhhjb</td>
+            <td id="vdef1">1</td>
+          </tr>
+          <tr>
+            <td colspan="2">¿Cuenta con sus prodecimiento documentados?</td>
+            <td id="pro1">T</td>
+            <td id="vpro1">1</td>
+          </tr>
+          <tr>
+            <td colspan="3">Total</td>
+            <td id="vas3">1</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<div class="encabezado2"><p>Sugerencia de servicios de maldonado consultores</p></div>
+<div>
+  <p>De acuerdo a la información proporcionada en el diagnóstico, a continuación brindaremos la <br> siguiente lista de servicios.</p>
+  <ul>
+    <li>Creación de modelos de crecimiento y desarrollo. </li>
+    <li>Creación de gobierno corporativo.</li>
+  </ul>
+  
+</div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+    
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="formato.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
